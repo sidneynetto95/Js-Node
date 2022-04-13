@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de JavaScript</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+          }
+
+        body {
+            margin: 15px 0px;
+            min-width: 300px;         
+            border-radius: solid 10px black;
+            text-align: center;
+        }
+
+        main {
+            background-color: aqua;
+            min-width: 300px;
+            max-width: 900px;
+            min-height: 500px;
+            margin: auto;
+            border:solid 1px black  ;
+            border-radius: 5px;
+        }
+
+        main > input {
+            height: 90px;
+            width: 135px;
+            margin: 10px;
+            margin-top: 150px;
+            margin-right: 9%;
+            margin-left: 9%;
+            font-size: 15px;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px black ;
+            background-color: rgba(0, 0, 0, 0.863);
+            color: green;
+            
+
+        }
+
+        main > h1 {
+            font: normal 70px arial;
+            
+        }
+        footer {
+            margin-top: 17%;
+            text-align: end;
+            background-color: aquamarine;
+            border: solid 1px black;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Desafio das Mensagens!</h1>
+        
+        
+            <input id="b1" type="button" value="Botão 1">
+            <input id="b2" type="button" value="Botão 2">
+            <input id="b3" type="button" value="Botão 3">
+    </main>
+    <footer>
+        <p>site escrito para desafio do Curso em vídeo</p>
+    </footer>
+    
+    <script>
+        var bt1 = document.getElementById('b1')
+        bt1.addEventListener('click',selectbt1)
+
+        function selectbt1() {
+            window.alert('Você selecionou o Botão 1')
+        }
+
+        var bt2 = document.getElementById('b2')
+        bt2.addEventListener('click',selectbt2)
+
+        function selectbt2() {
+            window.alert('Você selecionou o botão 2')
+        }
+
+        var bt3 = document.getElementById('b3')
+        bt3.addEventListener('click',selectbt3)
+
+        function selectbt3() {
+            window.alert('Você solucionou o botão 3')
+        }
+
+    </script>
+    
+</body>
+</html>

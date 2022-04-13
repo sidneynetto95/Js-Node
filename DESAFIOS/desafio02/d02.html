@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 de Js</title>
+</head>
+<body>
+    <main>
+        <h1>Boas-vindas!</h1>
+        <input id="b1" type="button" value="Inicie o desafio">
+    </main>
+
+    <script>
+        var bt1 = document.getElementById('b1')
+        bt1.addEventListener('click',selectbt1)
+
+        function selectbt1() {
+            var nome = window.prompt('Qual é o seu nome ?')
+            var idade = window.prompt('Qual a sua idade ?')
+            window.alert('Seu nome é ' + nome + ', e a sua idade é ' + idade + '.')
+        }
+    </script>
+</body>
+</html>

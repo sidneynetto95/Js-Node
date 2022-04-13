@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4 em Js!</title>
+</head>
+<body>
+    <main>
+        <h1>Calculando o troco:</h1>
+
+        <input id="bt1" type="button" value="Compra Produto">
+    </main>
+    <script>
+        var b1 = document.getElementById('bt1')
+        b1.addEventListener('click',selectb1)
+
+        function selectb1() {
+            var produto = window.prompt('Qual produto você está comprando?')
+            var preço = Number(window.prompt('Quanto custa ' + produto + '?'))
+            var pagamento = Number(window.prompt('Qual foi o valor que você deu para pagar ' + produto))
+            preço.toFixed(2)
+            pagamento.toFixed(2)
+            var troco = (pagamento - preço)
+            
+            
+            
+            window.alert(`Voce comprou um ${produto} que custou ${preço.toLocaleString('pt-BR',{style:'currency' , currency:'BRL' })} \n Deu o valor de ${pagamento.toLocaleString('pt-BR',{style:'currency' , currency:'BRL' })} e vai receber de troco ${troco.toLocaleString('pt-BR',{style:'currency' , currency:'BRL' })}`)
+        }
+
+    </script>
+    
+</body>
+</html>

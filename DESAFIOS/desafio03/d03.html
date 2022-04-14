@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3 em Js!</title>
+</head>
+<body>
+    <main>
+        <h1>Desafio do Antes de depois</h1>
+        <input id="bt1" type="button" value="Antecessor e sucessor">
+    </main>
+
+    <script>    
+        var bt1 = document.getElementById('bt1')
+        bt1.addEventListener('click', selectbt1)
+
+
+        function selectbt1() {
+            var n3 = Number(window.prompt('Digite um número:')) ;
+            var n1 = n3 - 1
+            var n2 = n3 + 1
+
+            window.alert('Seu número foi o: ' + n3  + ' \n O número antecessor é o: ' + n1 + '\n E o número sucessor é o: ' + n2)
+
+        }
+
+    </script>
+</body>
+</html>
